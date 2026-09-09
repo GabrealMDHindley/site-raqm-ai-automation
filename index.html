@@ -2247,17 +2247,11 @@ document.getElementById('burger').onclick = ()=> document.getElementById('mobile
   }
 
   /* ---------- timeline ---------- */
-  /* ---------- real generated dragon clip (walk + fire breath) ---------- */
-  /* Previous loader videos kept here for easy one-line revert:
-     Dragon orbit (orange fire):
-     // const LOADER_DRAGON_SRC = 'https://d8j0ntlcm91z4.cloudfront.net/user_3HhLGhdhKpsG1tkWOkU4hpTKvOn/hf_20260816_120651_6a28d97d-5cc3-4ead-996a-4a7793394571.mp4';
-     4K logo intro (19MB — too heavy, was split by device):
-     // const LOADER_DRAGON_SRC = 'https://d2ol7oe51mr4n9.cloudfront.net/user_3HhLGhdhKpsG1tkWOkU4hpTKvOn/e1ba524d-0b6b-4d7f-af37-34222d4b2a4c.mp4';
-     Earlier 1080p logo intro (before the newest, lighter export):
-     // const LOADER_DRAGON_SRC = 'https://d2ol7oe51mr4n9.cloudfront.net/user_3HhLGhdhKpsG1tkWOkU4hpTKvOn/4400d5a9-87f8-4de5-8b20-67a1372309ba.mp4';
-  */
-  /* Newest 1080p export (7MB) — used for both desktop and mobile for fast loading everywhere. */
-  const LOADER_DRAGON_SRC = 'https://d2ol7oe51mr4n9.cloudfront.net/user_3HhLGhdhKpsG1tkWOkU4hpTKvOn/74994fdb-327a-448b-99c5-66e3f0645eb0.mp4';
+  /* ---------- Raqm logo boot-up intro clip (OpenArt-generated, self-hosted) ---------- */
+  /* Self-hosted (not CloudFront — this session has no CloudFront access): circuit-trace
+     pulses travel into the R mark, the mark's glow breathes on, settles into a lit
+     dark-mode wordmark with drifting embers. 1.7MB, 1764x1176, 6s, silent. */
+  const LOADER_DRAGON_SRC = 'videos/loader-raqm-intro.mp4';
   const loaderVid = document.getElementById('loaderDragonVideo');
   let videoActive = false, videoNearEnd = false, phase2Start = null, videoSettled = false, useFallbackDragon = false;
   if(loaderVid && LOADER_DRAGON_SRC){
